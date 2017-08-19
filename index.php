@@ -53,7 +53,7 @@ while (false !== ($Entry = $DemoDirectory->read())) {
         continue;
     }
 
-    exec(
+    $Results[$Entry] = exec(
         'git -C '
         . $DemoDirectory->path
         . DIRECTORY_SEPARATOR
@@ -62,3 +62,5 @@ while (false !== ($Entry = $DemoDirectory->read())) {
     );
 
 }
+
+print_r($Results);
