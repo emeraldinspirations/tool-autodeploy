@@ -1,0 +1,13 @@
+{
+    "name": "emeraldinspirations/tool-autodeploy",
+    "description": "Auto deployment script for demo site",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Matthew \"Juniper\" Barlett",
+            "email": "emeraldinspirations@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
