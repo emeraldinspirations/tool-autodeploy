@@ -47,6 +47,7 @@ while (false !== ($Entry = $DemoDirectory->read())) {
         [
             '.',
             '..',
+            'index.php',
         ]
     )
     ) {
