@@ -35,7 +35,7 @@ $PayloadHash = hash_hmac($Algo, $Payload, $Secret);
 // Check if hashes are equivalent
 if ($Hash !== $PayloadHash) {
     // Kill the script or do something else here.
-    die('Bad secret');
+    die('Version: ' . trim(exec('git describe --tags')));
 }
 
 $DemoDirectory = dir('..');
@@ -58,7 +58,7 @@ while (false !== ($Entry = $DemoDirectory->read())) {
         . $DemoDirectory->path
         . DIRECTORY_SEPARATOR
         . $Entry
-        . ' pull --verify-signatures'
+        . ' pull --verify-signatures --tags'
     );
 
 }
